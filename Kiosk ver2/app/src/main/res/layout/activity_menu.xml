@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E9257528"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_toolbar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="메뉴목록"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:gravity="center"
+     android:background="@drawable/layout_border"
+     android:elevation="10dp">
+     <Button
+         android:id="@+id/btn_coffe"
+         android:layout_width="110dp"
+         android:layout_height="50dp"
+         android:layout_margin="10dp"
+         android:background="@drawable/btn_shape"
+         android:text="카페"
+         android:textAlignment="center"
+         android:textSize="25dp"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+         android:onClick="onClick"/>
+     <Button
+         android:id="@+id/btn_drink"
+         android:layout_width="110dp"
+         android:layout_height="50dp"
+         android:layout_margin="10dp"
+         android:background="@drawable/btn_shape"
+         android:text="음료"
+         android:textAlignment="center"
+         android:textSize="25dp"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+         android:onClick="onClick"/>
+     <Button
+         android:id="@+id/btn_dessert"
+         android:layout_width="110dp"
+         android:layout_height="50dp"
+         android:layout_margin="10dp"
+         android:background="@drawable/btn_shape"
+         android:text="디저트"
+         android:textAlignment="center"
+         android:textSize="25dp"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+         android:onClick="onClick"/>
+ </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <GridView
+                android:id="@+id/gridview1"
+                android:layout_width="wrap_content"
+                android:layout_height="480dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="15dp"
+                android:numColumns="3"
+                android:orientation="horizontal"
+                android:visibility="visible">
+            </GridView>
+            <GridView
+                android:id="@+id/gridview2"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="15dp"
+                android:numColumns="3"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+            </GridView>
+            <GridView
+                android:id="@+id/gridview3"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="15dp"
+                android:numColumns="3"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+            </GridView>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_border_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="주문수량 :"
+            android:textColor="@color/black"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="230px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="3000"
+            android:textColor="@color/black"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:text="￦"
+            android:textColor="@color/black"
+            android:textSize="60px"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cart_btn"
+            android:layout_width="320px"
+            android:layout_height="200px"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/btn_shape1"
+            android:fontFamily="@font/bmjua"
+            android:onClick="onClick"
+            android:text="주문내역"
+            android:textSize="70px"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

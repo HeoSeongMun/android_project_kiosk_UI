@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteActivity"
+    android:orientation="vertical"
+    android:background="#E9257528">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_shape1"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#EFEFEF"
+            android:fontFamily="@font/bmjua"
+            android:text="결제가 완료 되었습니다!"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/receipt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bmjua"
+            android:text="영수증을 출력 하시겠습니까?"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|top">
+
+        <Button
+            android:id="@+id/no_btn"
+            android:layout_width="320px"
+            android:layout_height="200px"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/btn_shape1"
+            android:text="아니요"
+            android:textSize="70px"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="320px"
+            android:layout_height="200px"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/btn_shape1"
+            android:text="네"
+            android:textSize="70px"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>

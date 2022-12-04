@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9257528"
+    android:orientation="vertical"
+    tools:context=".FinishActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:textSize="60px"
+            android:text="주문수량 : "/>
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:textSize="60px"
+            android:text="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:textSize="60px"
+            android:text="결제금액"/>
+        <TextView
+            android:layout_width="230px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30px"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:textSize="60px"
+            android:text="3000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="60px"
+            android:text="￦"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7px"
+        android:layout_marginTop="10px"
+        android:layout_marginHorizontal="30px"
+        android:background="@color/black">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginHorizontal="45px"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:textSize="60px"
+            android:text="카드를 화살표 방향으로 투입구에 넣어주세요 결제 오류시 카드를 긁어주세요"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/payment" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|top"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="320px"
+            android:layout_height="200px"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/btn_shape1"
+            android:text="결제 취소"
+            android:textSize="70px"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/payment_btn"
+            android:layout_width="320px"
+            android:layout_height="200px"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/btn_shape1"
+            android:text="결제하기"
+            android:textSize="70px"
+            android:textStyle="bold"
+            android:fontFamily="@font/bmjua"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>
